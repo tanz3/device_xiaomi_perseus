@@ -4,8 +4,6 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-$(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
-
 # Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
@@ -13,6 +11,8 @@ PRODUCT_COMPRESSED_APEX := false
 
 # Get non-open-source specific aspects
 $(call inherit-product-if-exists, vendor/xiaomi/perseus/perseus-vendor.mk)
+
+PRODUCT_SHIPPING_API_LEVEL := 28
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2340
