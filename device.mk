@@ -4,10 +4,10 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-$(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
-
 # Get non-open-source specific aspects
 $(call inherit-product, vendor/xiaomi/perseus/perseus-vendor.mk)
+
+PRODUCT_SHIPPING_API_LEVEL := 28
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2340
