@@ -13,7 +13,7 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 PRODUCT_NAME := lineage_perseus
 PRODUCT_DEVICE := perseus
 PRODUCT_BRAND := Xiaomi
-PRODUCT_MODEL := Mi MIX 3
+PRODUCT_MODEL := MIX 3
 PRODUCT_MANUFACTURER := Xiaomi
 
 PRODUCT_SYSTEM_NAME := perseus
